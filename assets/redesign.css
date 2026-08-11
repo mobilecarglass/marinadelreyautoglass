@@ -224,3 +224,45 @@ p{margin:0 0 16px}
 
 .mobile-nav-phone svg{width:18px;height:18px;flex:none}
 .mobile-nav-phone span{display:block;min-width:0}
+
+
+/* Universal Netlify quote form integration */
+.quote-form-card{
+  min-width:0;
+  max-width:100%;
+  overflow:hidden;
+}
+.quote-form-card .quote-form-intro{
+  color:var(--muted);
+  margin-bottom:22px;
+}
+.quote-iframe-wrap{
+  width:100%;
+  max-width:100%;
+  min-width:0;
+  overflow:hidden;
+  border-radius:12px;
+}
+.quote-iframe-wrap iframe{
+  display:block;
+  width:100%;
+  max-width:100%;
+  min-width:0;
+  height:1050px;
+  border:0;
+  background:#fff;
+}
+@media(max-width:1000px){
+  .coverage > *,
+  .quote-form-card{
+    min-width:0;
+  }
+}
+@media(max-width:760px){
+  .quote-form-card{
+    padding:24px;
+  }
+  .quote-iframe-wrap iframe{
+    height:1950px;
+  }
+}
